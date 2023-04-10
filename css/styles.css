@@ -24,7 +24,7 @@ ul {
   border: 1px solid black;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 375px) {
   .container {
     width: 335px;
     height: 404px;
@@ -90,7 +90,7 @@ ul {
 /* -------------------- /zero-settings -------------------- */
 
 /* -------------------- review-section -------------------- */
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 375px) {
   .review {
     margin-top: 72px;
     margin-bottom: 0;
@@ -121,6 +121,7 @@ ul {
   background: rgb(226 226 226 / 10%);
 }
 
+
 .review-user-picture {
   display: block;
   position: absolute;
@@ -133,6 +134,7 @@ ul {
   top: 0;
   transform: translateY(-50%) translateX(-50%);
 }
+
 .review-header {
   font-family: "Montserrat";
   font-style: normal;
@@ -222,6 +224,16 @@ ul {
 /* -------------------- /swiper-section -------------------- */
 
 /* -------------------- modal-section -------------------- */
+@media screen and (max-width: 479px) {
+  .is-hidden{
+    display: none;
+  }
+  .modal-btn{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 
 .modal-btn {
   font-family: "Montserrat";
@@ -266,7 +278,7 @@ ul {
   padding-top: 80px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 375px) {
   .modal {
     width: 311px;
     border-radius: 15px;
@@ -314,9 +326,16 @@ ul {
     fill: black;
     transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   }
+
+  
+  
   .modal-close:is(:hover, :focus) {
     fill: #f16529;
     background-color: #fcf1e0;
+  }
+
+  .modal-close:hover .close-button{
+    fill: #f16529;
   }
 
   .is-hidden {
@@ -344,6 +363,8 @@ ul {
     color: #111111;
     width: 255px;
     height: 48px;
+
+    margin-bottom: 32px;
   }
 
   .header-logo-text {
@@ -364,6 +385,10 @@ ul {
 
   .form-input:nth-child(2) {
     padding-left: 88px;
+  }
+
+  .modal-form {
+    margin-top: 32px;
   }
 
   .form-input:focus {
